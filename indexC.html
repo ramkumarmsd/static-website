@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+  input{
+    width: 200%;
+    padding: 10px;
+       }
+  .p{
+    margin-top: 200px;
+    margin-left: 300px;
+    margin-right: 400px;
+    outline-style:inherit ;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff;
+   }
+   input[type=submit]{width: 212%;}
+  </style>
+    
+    <title>calculate.com</title>
+</head>
+<body style="background-color: rgb(99, 99, 99);" >
+<form name="indexC.html"  onsubmit="return cal()" autocomplete="off" class="p">
+        <h2 style="color: rgb(0, 0, 0);">price calculater</h2>
+<table>
+    <tr><th></th></tr>
+    <tr><td>Product Name:</td><td><input type="text" id="name" placeholder="Product Name"></td></tr>  
+    <tr><td>Price:</td><td><input type="number" id="no" ></td></tr>
+    <tr><td>Enter:</td><td><input type="submit" id="submit"></td></tr>
+</table>
+</form>
+         
+         
+<script>
+    function cal(){
+      var name=document.getElementById('name').value;
+    
+      var no=document.getElementById('no').value;                  
+      var  a =/^([0-9]{4})+$/ 
+
+      if(name==""){
+        alert("please enter product name");
+        return false;
+      }  
+           
+      if(no=="")
+      {
+        alert("please enter product price");
+        return false;    
+      }
+      if(!a.test(no)){
+        alert("please enter four digit number");
+        return false;
+      }
+
+      var y = name; 
+      var z = no;
+      {
+      alert(" we have provide 20% offer on every purchase");
+      document.write("your " + y + " price is = " +(z-273)+".");
+      }
+    }
+</script> 
+
+</body>
+</html>

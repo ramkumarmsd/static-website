@@ -1,0 +1,29 @@
+input{
+    width: 200%;
+    padding: 4px;
+  }
+input[type=submit]{width: 50%;}
+input[type=reset]{width: 50%;}
+
+.k{
+  margin-left: 20px;
+}
+
+.p{
+   margin-left: 300px;
+    margin-right: 400px;
+    outline-style:inherit ;
+    padding: 20px;
+    
+    border-radius: 5px;
+   background-color: rgb(255, 254, 254);
+   }
+   .e{
+    margin-left: 300px;
+    margin-right: 200px;
+    outline-style:inherit ;
+    padding: 20px;
+    
+    border-radius: 0px;
+   background-color: rgb(255, 255, 255);
+}
